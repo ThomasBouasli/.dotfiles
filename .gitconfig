@@ -1,0 +1,8 @@
+[user]
+	name = Thomas
+	email = thomas.bouasli@gmail.com
+[core]
+  autocrlf = input
+  editor = nvim
+[init]
+	defaultBranch = master
