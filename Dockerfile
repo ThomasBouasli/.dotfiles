@@ -12,4 +12,4 @@ WORKDIR /root/.dotfiles
 
 COPY . /root/.dotfiles
 
-RUN ./INSTALL.sh
+CMD ["./INSTALL.sh"]
