@@ -84,7 +84,7 @@ hide_output ln -sf ${DIR}/.gitconfig ~/.gitconfig
 
 # Install Apps
 
-echo "Do you wish to install this spotify? (y/n)"
+echo "Do you wish to install spotify? (y/n)"
 select yn in "y" "n"; do
     case $yn in
         y ) hide_output flatpak install flathub com.spotify.Client; break;;
@@ -92,7 +92,7 @@ select yn in "y" "n"; do
     esac
 done
 
-echo "Do you wish to install this discord? (y/n)"
+echo "Do you wish to install discord? (y/n)"
 select yn in "y" "n"; do
     case $yn in
         y ) hide_output flatpak install flathub com.discordapp.Discord; break;;
@@ -100,7 +100,7 @@ select yn in "y" "n"; do
     esac
 done
 
-echo "Do you wish to install this vscode? (y/n)"
+echo "Do you wish to install vscode? (y/n)"
 select yn in "y" "n"; do
     case $yn in
         y ) hide_output flatpak install flathub com.visualstudio.code; break;;
@@ -108,4 +108,26 @@ select yn in "y" "n"; do
     esac
 done
 
+echo "Do you wish to install steam? (y/n)"
+select yn in "y" "n"; do
+    case $yn in
+        y ) hide_output flatpak install flathub com.valvesoftware.Steam; break;;
+        n ) break;;
+    esac
+done
 
+echo "Do you wish to install chrome? (y/n)"
+select yn in "y" "n"; do
+    case $yn in
+        y ) hide_output flatpak install flathub com.google.Chrome; break;;
+        n ) break;;
+    esac
+done
+
+echo "Do you wish to install lutris? (y/n)"
+select yn in "y" "n"; do
+    case $yn in
+        y ) hide_output flatpak install flathub net.lutris.Lutris; break;;
+        n ) break;;
+    esac
+done
