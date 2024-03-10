@@ -1,5 +1,5 @@
 local options = {
-    ensure_installed = { "lua-language-server", "eslint-lsp", "typescript-language-server", "rust-analyzer", "prettier", "pyright" , "dockerfile-language-server" , "docker-compose-language-service" },
+    ensure_installed = { "lua-language-server", "eslint-lsp", "typescript-language-server", "rust-analyzer", "prettier", "pyright" , "dockerfile-language-server" , "docker-compose-language-service", "stylua" },
 
     PATH = "prepend",
 
