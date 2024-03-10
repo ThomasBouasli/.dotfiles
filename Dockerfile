@@ -12,4 +12,6 @@ WORKDIR /root/.dotfiles
 
 COPY . /root/.dotfiles
 
-CMD ["./INSTALL.sh"]
+# RUN yes "n" | ./install.sh
+
+CMD ["ls"]
